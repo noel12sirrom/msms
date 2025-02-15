@@ -1,0 +1,14 @@
+error with id's
+
+if we have 
+1 leon
+2 iyana
+3 justing
+if i delete leon and iyana  and add them again its shows as
+
+3 justing
+2 leon
+3 iyana
+
+so the id's arent unique
+
