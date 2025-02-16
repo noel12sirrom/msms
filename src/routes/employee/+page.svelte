@@ -5,6 +5,7 @@
 </svelte:head>
 
 <script>
+	import Tble from '$lib/components/Tble.svelte';
 	let users = [
 		{ id: 1, name: "Alice", role: ["Cashier", "Manager"], contactNumber: "1876 2514811", DOB: "15-05-2003", email: "alice@example.com", status: "Active" },
 		{ id: 2, name: "Bob", role: "Technician", contactNumber: "1876 2514811", DOB: "02-12-1997", email: "bob@example.com", status: "Inactive" },
@@ -87,9 +88,10 @@
 		  Add Employee
 		</button>
 	  </div>
+
+
   <div class="overflow-x-auto p-4 max-h-[80vh]">
 	
-
 	<table class="w-full border-collapse rounded-lg shadow-lg">
 	  <thead>
 		<tr class="bg-gray-800 text-white text-left">
@@ -166,5 +168,8 @@
 	</table>
   
 	<!-- Add Row Form -->
+	 <div class="flex justify-center mt-4">
+		
+	 </div>
 	
   </div>

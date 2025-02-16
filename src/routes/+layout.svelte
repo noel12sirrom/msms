@@ -5,26 +5,16 @@
 	let { children } = $props();
 </script>
 
-<div class="app">
+<div class="bg-[url('$lib/images/background.jpg')] bg-cover bg-center min-h-screen flex flex-row min-h-screen">
 	<Header />
 
-	<main>
+	<main >
 		{@render children()}
 	</main>
 
-	<footer>
-		<p>
-			Motorcycle Managment System
-		</p>
-	</footer>
 </div>
 
 <style>
-	.app {
-		display: flex;
-		flex-direction: column;
-		min-height: 100vh;
-	}
 
 	main {
 		flex: 1;
@@ -32,22 +22,13 @@
 		flex-direction: column;
 		padding: 1rem;
 		width: 100%;
-		max-width: 64rem;
+		
 		margin: 0 auto;
 		box-sizing: border-box;
-	}
-
-	footer {
-		display: flex;
-		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		padding: 12px;
 	}
 
-	footer a {
-		font-weight: bold;
-	}
 
 	@media (min-width: 480px) {
 		footer {
