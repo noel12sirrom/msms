@@ -12,19 +12,20 @@
 	}
 </script>
 
-<header class="border-r w-1/6 border-gray-200 flex flex-col items-center justify-between bg-gray-200">
-	<div class="w-[3em] h-[3em]">
+<header class=" w-1/6 flex flex-col items-center justify-between bg-slate-200/50 rounded-r-[5%]">
+	<div class="w-[21em] h-[9em] flex items-center justify-center flex-col">
 		<a href='/'>
 			<img src={logo} alt="SvelteKit" />
 		</a>
+		<p class="-mt-12 font-bold">Hewitt's Motorcycles</p>
 	</div>
 
 
 	<nav class="w-full">
-		<ul class="flex flex-col justify-between items-center w-full border-2">
+		<ul class="flex flex-col justify-between items-center w-full">
 			{#each Object.keys(pages) as pageName, i}
-			<li class="w-full text-center p-5 
-			{page.url.pathname === pages[pageName] ? 'bg-none' : 'text-gray-700'}" 
+			<li class=" w-full text-center p-8 text-mono font-bold hover:text-orange-500 transition duration-200 
+			{page.url.pathname === pages[pageName] ? 'bg-transparent' : 'text-gray-700'}" 
 			aria-current={page.url.pathname === pages[pageName] ? 'page' : undefined}>
 				<a href={pages[pageName]}>{pageName}</a>
 			</li>

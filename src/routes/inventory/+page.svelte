@@ -29,6 +29,14 @@
 	];
 
 </script>
-<h1 class="text-2xl font-semibold">Inventory</h1>
+<div class="flex flex-col items-center justify-center w-full">
+	<div class="flex gap-2 m-0 p-0 items-center justify-between m-5 w-[90%]">
+		<h1 class="text-4xl font-semibold text-left w-[88%] ">Inventory</h1>
+		<button class="bg-orange-500 text-white px-4 py-2 rounded-md hover:bg-orange-600">
+			Log out
+		</button>
+	</div>
+	
 
-  <Tble items={parts} />
+	<Tble items={parts} />
+</div>

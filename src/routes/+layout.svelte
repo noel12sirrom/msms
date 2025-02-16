@@ -5,7 +5,7 @@
 	let { children } = $props();
 </script>
 
-<div class="bg-[url('$lib/images/background.jpg')] bg-cover bg-center min-h-screen flex flex-row min-h-screen">
+<div class="bg-[url('$lib/images/bg2.jpg')] bg-cover bg-center min-h-screen flex flex-row min-h-screen">
 	<Header />
 
 	<main >
