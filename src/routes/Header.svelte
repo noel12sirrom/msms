@@ -12,7 +12,7 @@
 	}
 </script>
 
-<header class=" w-1/6 flex flex-col items-center justify-between bg-slate-200/50 rounded-r-[5%]">
+<header class=" w-1/6 flex flex-col items-center justify-between bg-slate-200/50  border-r-4 border-orange-500 ">
 	<div class="w-[21em] h-[9em] flex items-center justify-center flex-col">
 		<a href='/'>
 			<img src={logo} alt="SvelteKit" />
@@ -25,7 +25,7 @@
 		<ul class="flex flex-col justify-between items-center w-full">
 			{#each Object.keys(pages) as pageName, i}
 			<li class=" w-full text-center p-8 text-mono font-bold hover:text-orange-500 transition duration-200 
-			{page.url.pathname === pages[pageName] ? 'bg-transparent' : 'text-gray-700'}" 
+			{page.url.pathname === pages[pageName] ? 'bg-orange-500 border-r rounded-l-2xl' : 'text-gray-700'}" 
 			aria-current={page.url.pathname === pages[pageName] ? 'page' : undefined}>
 				<a href={pages[pageName]}>{pageName}</a>
 			</li>

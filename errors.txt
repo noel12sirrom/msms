@@ -12,3 +12,6 @@ if i delete leon and iyana  and add them again its shows as
 
 so the id's arent unique
 
+----
+had error when deleting itemsturns out i had itemToDelete.id instead of itemToDelete.ID
+

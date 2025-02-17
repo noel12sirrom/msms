@@ -38,5 +38,5 @@
 	</div>
 	
 
-	<Tble items={parts} />
+	<Tble items={parts} tableName="Inventory" />
 </div>
